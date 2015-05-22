@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: <?xml version="1.0" encoding="UTF-8 " ?> -->
+<menu>
+  <pedido>
+    <entrada>Coctel camarones</entrada>
+    <platofuerte>Lomo al ajillo</platofuerte>
+    <postre>Pastel chocolate</postre>
+    <precio>20.90</precio>
+    <bebidas>jugo tomate</bebidas>
+  </pedido>
+  <pedido>
+    <entrada>Ensalada rusa</entrada>
+    <platofuerte>Trucha</platofuerte>
+    <postre>Flan naranja</postre>
+    <precio>11.90</precio>
+    <bebidas>Jugo Limon/bebidas>
+  </pedido>
+  <pedido>
+    <entrada>Ensala de mariscos</entrada>
+    <platofuerte>Pavo relleno</platofuerte>
+    <postre>Helado de mora</postre>
+    <precio>15.90</precio>
+    <bebidas>Gaseosa/bebidas>
+  </pedido>
+</menu>

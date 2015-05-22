@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: <?xml version="1.0" encoding="UTF-8 " ?> -->
+<coleccion>
+  <cd>
+    <titulo>Bob Marley the best song</titulo>
+    <artista>Bob Marley</artista>
+    <pais>Jamaica</pais>
+    <disquera>Columbia</disquera>
+    <precio>20.90</precio>
+    <anio>1977</anio>
+  </cd>
+  <cd>
+    <titulo>Ben</titulo>
+    <artista>Michael Jackson</artista>
+    <pais>USA</pais>
+    <disquera>Motown</disquera>
+    <precio>11.90</precio>
+    <anio>1972/anio>
+  </cd>
+  <cd>
+    <titulo>Music and Me</titulo>
+    <artista>Michael Jackson</artista>
+    <pais>USA</pais>
+    <disquera>Motown</disquera>
+    <precio>11.90</precio>
+    <anio>1973/anio>
+  </cd>
+</coleccion>

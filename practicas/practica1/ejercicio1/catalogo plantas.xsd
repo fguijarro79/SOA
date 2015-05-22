@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: <?xml version="1.0" encoding="UTF-8 " ?> -->
+<catalogo>
+  <plantas>
+    <nombre>Begonia</nombre>
+    <especie>Cactus</especie>
+    <origen>Jamaica</origen>
+    <precio>12.90</precio>
+  </plantas>
+  <plantas>
+    <nombre>Rosa</nombre>
+    <especie>Flores</especie>
+    <origen>Ecuador</origen>
+    <precio>11.90</precio>
+      </plantas>
+  <plantas>
+    <nombre>MAstromelia</nombre>
+    <especie>Hornamental</especie>
+    <origen>Peur</origen>
+    <precio>8.90</precio>
+     </plantas>
+</catalogo>
