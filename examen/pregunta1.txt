@@ -1,0 +1,3 @@
+El problema principal que intenta resolver soa es el organizar los datos y reutilizar estos en varias plataformas
+para mejorar con esto los procesos y bajar los tiempos consideablemente para cualquier solicitud entendiendo que esta
+esta enfocada en servicios que son inmediatos por la naturaleza de los mismos.

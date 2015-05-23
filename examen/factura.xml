@@ -1,0 +1,101 @@
+<xsd:schema >
+<xsd:apuntes>
+    <xsd:documentacion>
+      Ejercicio Garden
+    </xsd:documentacion>
+  </xsd:apuntes>
+<xs:element name="factura">
+
+      
+          <xs:element name="datos_empresa" >
+          <xs:complexType>
+            <xs:sequence>
+              xs:element name="" type="xs:string"/>
+                <xs:element name="nombre" type="xs:string" />
+                      <xs:element name="dir_env" type="xs:string"/>
+                      <xs:element name="ciudad cod_postal" type="xs:string"/>
+                      <xs:element name="provincia" type="xs:string"/>
+                      <xs:element name="telefono" type="tns:numeros />
+                      <xs:element name="fax" type="tns:numeros/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element> 
+
+
+        <xs:element name="datos_cliente">
+          <xs:complexType>
+            <xs:sequence>
+              xs:element name="" type="xs:string"/>
+                <xs:element name="nombre" type="xs:string" />
+                      <xs:element name="dir" type="tns:datos/>
+                      <xs:element name="ciudad" type="xs:string"/>
+                      <xs:element name="provincia" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element> 
+
+        <xs:element name="datos_factura">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nped" type="xs:integer"/>
+                <xs:element name="porcentaje_iva" type="xs:decimal" use="requerid" />
+                <xs:element name="formadepago">
+                     <xs:complexType>
+                        <xs:choice>
+                           <xs:element name="cheuqe" type="cheuqe"/>
+                           <xs:element name="efectivo" type="efectivor"/>
+                           <xs:element name="tarjeta" type="tarjeta"/>
+                        </xs:choice>
+                     </xs:complexType>
+                </xs:element> 
+                <xs:element name="moneda" type="xs:dolar" use="requerid"/>
+                <xs:element name="fecha" type="xs:date"/>
+                <xs:element name="producto" type= "onbound" />
+                    <xs:sequence>
+                      <xs:complexType>
+                           <xs:element name="cod" type="string" type="[0-9][a-z]{15}/>
+                           <xs:element name="descr" type="string"/>
+                           <xs:element name="cantidad" type="interger" minLength="0" maxLength="500"/> 
+                           <xs:element name="precio" type="decimal"/> 
+                     </xs:complexType>                          
+                    </xs:sequence>
+                 </xs:element> 
+      
+ 
+           <xs:complexType name="numeros" >
+           <xs:sequence>
+             <xs:element ref="tns:"string"/>
+             <xs:restriction ref="tns:totalDigitos">
+                <xs:pattern value="[0-9]{7}"/>
+             </xs:restriction>
+           </xs:sequence>
+      </xsd:complexType>
+
+        <xs:element name="datos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="tns:Nombre" type="xs:string"/>
+              <xs:element ref="tns:Direccion" type="xs:string""/>
+              <xs:restriction ref="tns:totalDigitos">
+                <xs:pattern value="[0-9]{4}"/>
+              </xs:restriction>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element> 
+  
+   
+   </xs:element> 
+
+</xsd:schema>
+
+
+
+
+
+
+
+extension base="xs:integer">
+      <xs:attribute name="country" type="xs:string" />
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType> 
